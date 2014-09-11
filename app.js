@@ -9,15 +9,12 @@ var port    = process.env.PORT || 3000;
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
-    var now = new Date();
     res.render('index', {
-        title   : 'File upload',
-        year    : now.getFullYear(),
-        month   : now.getMonth()
+        title   : 'File upload'
     });
 });
 
-app.post('/:year/:month', function (req, res) {
+app.post('/', function (req, res) {
     var form = new formidable.IncomingForm();
     form.uploadDir = './uploads';
     form.keepExtensions = true;
