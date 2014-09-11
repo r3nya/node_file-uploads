@@ -1,0 +1,16 @@
+{
+  "name": "node_file-uploads",
+  "version": "1.0.0",
+  "description": "File uploads in node.js. Example.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew M.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.0",
+    "formidable": "^1.0.15",
+    "jade": "^1.6.0"
+  }
+}
